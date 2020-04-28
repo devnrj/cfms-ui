@@ -1,1 +1,7 @@
-<p>sidebar works!</p>
+<div class="menus">
+    <ul>
+        <li *ngFor="let menu of menuItems">
+            <a routerLink={{menu.uri}} routerLinkActive="active" (click)="refreshMenus()">{{menu.title}}</a>
+        </li>
+    </ul>
+</div>
